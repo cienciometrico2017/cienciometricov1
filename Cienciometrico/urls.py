@@ -37,6 +37,7 @@ urlpatterns = [
     url(r'^otrainvestigacion/', include('apps.otrasinvestigaciones.urls', namespace="otrainvestigacion")),
     url(r'^participacioneventos/', include('apps.participacioneventos.urls', namespace="partevento")),
     url(r'^Proyectos/', include('apps.Proyectos.urls', namespace="proyectos")),
+    url(r'^', include('apps.Inicio.urls', namespace="inicio")),
 ]
 
 if settings.DEBUG:
